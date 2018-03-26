@@ -1,6 +1,6 @@
 <?php
 
-namespace MauticPlugin\WechatBundle\Entity;
+namespace MauticPlugin\MauticWechatBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Mautic\CoreBundle\Doctrine\Mapping\ClassMetadataBuilder;
@@ -13,7 +13,7 @@ use Mautic\LeadBundle\Entity\LeadList;
 /**
  * Class Message
  *
- * @package MauticPlugin\WechatBundle\Entity
+ * @package MauticPlugin\MauticWechatBundle\Entity
  */
 class Message extends FormEntity
 {
@@ -59,7 +59,7 @@ class Message extends FormEntity
         $builder = new ClassMetadataBuilder($metadata);
 
         $builder->setTable('wechat_messages')
-            ->setCustomRepositoryClass('MauticPlugin\WechatBundle\Entity\MessageRepository');
+            ->setCustomRepositoryClass('MauticPlugin\MauticWechatBundle\Entity\MessageRepository');
 
         $builder->addId();
 

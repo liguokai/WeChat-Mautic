@@ -1,6 +1,6 @@
 <?php
 
-namespace MauticPlugin\WechatBundle\Form\Type;
+namespace MauticPlugin\MauticWechatBundle\Form\Type;
 
 use Mautic\CoreBundle\Factory\MauticFactory;
 use Mautic\CoreBundle\Form\DataTransformer\IdToEntityModelTransformer;
@@ -13,7 +13,7 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 /**
  * Class MessageType
  *
- * @package MauticPlugin\WechatBundle\Form\Type
+ * @package MauticPlugin\MauticWechatBundle\Form\Type
  */
 class MessageType extends AbstractType
 {

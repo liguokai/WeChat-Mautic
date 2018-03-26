@@ -7,13 +7,13 @@
  * @license     GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
 
-namespace MauticPlugin\WechatBundle\Api;
+namespace MauticPlugin\MauticWechatBundle\Api;
 
 use Joomla\Http\Http;
 use Joomla\Http\Response;
 use Mautic\CoreBundle\Factory\MauticFactory;
 use Mautic\LeadBundle\Entity\Lead;
-use MauticPlugin\WechatBundle\Entity\Account;
+use MauticPlugin\MauticWechatBundle\Entity\Account;
 
 abstract class AbstractWechatApi
 {

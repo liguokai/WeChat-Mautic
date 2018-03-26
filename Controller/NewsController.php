@@ -1,14 +1,14 @@
 <?php
-namespace MauticPlugin\WechatBundle\Controller;
+namespace MauticPlugin\MauticWechatBundle\Controller;
 
 use Mautic\CoreBundle\Controller\FormController;
 use Mautic\CoreBundle\Helper\BuilderTokenHelper;
 use Mautic\CoreBundle\Helper\EmojiHelper;
 use Mautic\CoreBundle\Helper\InputHelper;
 use Mautic\CoreBundle\Templating\TemplateNameParser;
-use MauticPlugin\WechatBundle\WechatEvents;
-use MauticPlugin\WechatBundle\Entity;
-use MauticPlugin\WechatBundle\Model;
+use MauticPlugin\MauticWechatBundle\WechatEvents;
+use MauticPlugin\MauticWechatBundle\Entity;
+use MauticPlugin\MauticWechatBundle\Model;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -27,7 +27,7 @@ class NewsController extends FormController
         $model = $this->factory->getModel('wechat');
 
         if (!$entity instanceof News) {
-            /** @var \MauticPlugin\WechatBundle\Entity\Wechat $entity */
+            /** @var \MauticPlugin\MauticWechatBundle\Entity\Wechat $entity */
             $entity  = $model->getEntity('News');
         }
 

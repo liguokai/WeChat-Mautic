@@ -1,6 +1,6 @@
 <?php
 
-namespace MauticPlugin\WechatBundle\Form\Type;
+namespace MauticPlugin\MauticWechatBundle\Form\Type;
 
 use Mautic\CoreBundle\Factory\MauticFactory;
 use Mautic\CoreBundle\Form\DataTransformer\IdToEntityModelTransformer;
@@ -13,7 +13,7 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 /**
  * Class StatType
  *
- * @package MauticPlugin\WechatBundle\Form\Type
+ * @package MauticPlugin\MauticWechatBundle\Form\Type
  */
 class StatType extends AbstractType
 {
@@ -94,7 +94,7 @@ class StatType extends AbstractType
     {
         $resolver->setDefaults(
             array(
-                'data_class' => 'MauticPlugin\WechatBundle\Entity\Stat'
+                'data_class' => 'MauticPlugin\MauticWechatBundle\Entity\Stat'
             )
         );
 

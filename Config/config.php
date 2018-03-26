@@ -34,68 +34,68 @@ return array(
     'services'    => array(
         'events'  => array(
             'mautic.wechat.configbundle.subscriber' => array(
-                'class' => 'MauticPlugin\WechatBundle\EventListener\ConfigSubscriber'
+                'class' => 'MauticPlugin\MauticWechatBundle\EventListener\ConfigSubscriber'
             ),
             'mautic.wechat.campaignbundle.subscriber' => array(
-                'class' => 'MauticPlugin\WechatBundle\EventListener\CampaignSubscriber'
+                'class' => 'MauticPlugin\MauticWechatBundle\EventListener\CampaignSubscriber'
             )
         ),
         'forms' => array(
             'mautic.form.type.wechatconfig'  => array(
-                'class' => 'MauticPlugin\WechatBundle\Form\Type\ConfigType',
+                'class' => 'MauticPlugin\MauticWechatBundle\Form\Type\ConfigType',
                 'alias' => 'wechatconfig'
             ),
             'mautic.form.type.account_list'     => array(
-                'class'     => 'MauticPlugin\WechatBundle\Form\Type\AccountListType',
+                'class'     => 'MauticPlugin\MauticWechatBundle\Form\Type\AccountListType',
                 'arguments' => 'mautic.factory',
                 'alias'     => 'account_list'
             ),
             'mautic.form.type.accountfollow_list' => array(
-                'class'     => 'MauticPlugin\WechatBundle\Form\Type\AccountFollowType',
+                'class'     => 'MauticPlugin\MauticWechatBundle\Form\Type\AccountFollowType',
                 'arguments' => 'mautic.factory',
                 'alias'     => 'accountfollow_list'
             ),
             'mautic.form.type.message' => array(
-                'class'     => 'MauticPlugin\WechatBundle\Form\Type\MessageType',
+                'class'     => 'MauticPlugin\MauticWechatBundle\Form\Type\MessageType',
                 'arguments' => 'mautic.factory',
                 'alias'     => 'message'
             ),
             'mautic.form.type.message_list'     => array(
-                'class'     => 'MauticPlugin\WechatBundle\Form\Type\MessageListType',
+                'class'     => 'MauticPlugin\MauticWechatBundle\Form\Type\MessageListType',
                 'arguments' => 'mautic.factory',
                 'alias'     => 'message_list'
             ),
             'mautic.form.type.messagesend_list' => array(
-                'class'     => 'MauticPlugin\WechatBundle\Form\Type\MessageSendType',
+                'class'     => 'MauticPlugin\MauticWechatBundle\Form\Type\MessageSendType',
                 'arguments' => 'mautic.factory',
                 'alias'     => 'messagesend_list'
             ),
             'mautic.form.type.news' => array(
-                'class'     => 'MauticPlugin\WechatBundle\Form\Type\NewsType',
+                'class'     => 'MauticPlugin\MauticWechatBundle\Form\Type\NewsType',
                 'arguments' => 'mautic.factory',
                 'alias'     => 'news'
             ),
             'mautic.form.type.article' => array(
-                'class'     => 'MauticPlugin\WechatBundle\Form\Type\ArticleType',
+                'class'     => 'MauticPlugin\MauticWechatBundle\Form\Type\ArticleType',
                 'arguments' => 'mautic.factory',
                 'alias'     => 'article'
             ),
             'mautic.form.type.stat' => array(
-                'class'     => 'MauticPlugin\WechatBundle\Form\Type\StatType',
+                'class'     => 'MauticPlugin\MauticWechatBundle\Form\Type\StatType',
                 'arguments' => 'mautic.factory',
                 'alias'     => 'stat'
             ),
         ),
         'helpers' => array(
             'mautic.helper.wechat' => array(
-                'class'     => 'MauticPlugin\WechatBundle\Helper\WechatHelper',
+                'class'     => 'MauticPlugin\MauticWechatBundle\Helper\WechatHelper',
                 'arguments' => 'mautic.factory',
                 'alias'     => 'wechat_helper'
             )
         ),
         'other' => array(
             'mautic.wechat.api' => array(
-                'class'     => 'MauticPlugin\WechatBundle\Api\WechatApi',
+                'class'     => 'MauticPlugin\MauticWechatBundle\Api\WechatApi',
                 'arguments' => array(
                     'mautic.factory',
                 ),

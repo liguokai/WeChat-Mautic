@@ -1,6 +1,6 @@
 <?php
 
-namespace MauticPlugin\WechatBundle\Entity;
+namespace MauticPlugin\MauticWechatBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Mautic\CoreBundle\Doctrine\Mapping\ClassMetadataBuilder;
@@ -13,7 +13,7 @@ use Mautic\LeadBundle\Entity\LeadList;
 /**
  * Class Stat
  *
- * @package MauticPlugin\WechatBundle\Entity
+ * @package MauticPlugin\MauticWechatBundle\Entity
  */
 class Stat extends FormEntity
 {
@@ -99,7 +99,7 @@ class Stat extends FormEntity
         $builder = new ClassMetadataBuilder($metadata);
 
         $builder->setTable('wechat_stats')
-            ->setCustomRepositoryClass('MauticPlugin\WechatBundle\Entity\StatRepository')
+            ->setCustomRepositoryClass('MauticPlugin\MauticWechatBundle\Entity\StatRepository')
             ->addIndex(array('account_id', 'lead_id'), 'stat_wechat_search')
             ->addIndex(array('message_id'), 'stat_wechat_message_search')
             ->addIndex(array('article_id'), 'stat_wechat_article_search')
@@ -108,22 +108,22 @@ class Stat extends FormEntity
 
         $builder->addId();
 
-        $builder->createManyToOne('account', 'MauticPlugin\WechatBundle\Entity\Account')
+        $builder->createManyToOne('account', 'MauticPlugin\MauticWechatBundle\Entity\Account')
             ->inversedBy('stats')
             ->addJoinColumn('account_id', 'id', true, false, 'SET NULL')
             ->build();
 
-        $builder->createManyToOne('message', 'MauticPlugin\WechatBundle\Entity\Message')
+        $builder->createManyToOne('message', 'MauticPlugin\MauticWechatBundle\Entity\Message')
             ->inversedBy('stats')
             ->addJoinColumn('message_id', 'id', true, false, 'SET NULL')
             ->build();
 
-        $builder->createManyToOne('article', 'MauticPlugin\WechatBundle\Entity\Article')
+        $builder->createManyToOne('article', 'MauticPlugin\MauticWechatBundle\Entity\Article')
             ->inversedBy('stats')
             ->addJoinColumn('article_id', 'id', true, false, 'SET NULL')
             ->build();
 
-        $builder->createManyToOne('news', 'MauticPlugin\WechatBundle\Entity\News')
+        $builder->createManyToOne('news', 'MauticPlugin\MauticWechatBundle\Entity\News')
             ->inversedBy('stats')
             ->addJoinColumn('news_id', 'id', true, false, 'SET NULL')
             ->build();

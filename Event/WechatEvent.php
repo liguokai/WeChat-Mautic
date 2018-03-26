@@ -1,15 +1,15 @@
 <?php
 
-namespace MauticPlugin\WechatBundle\Event;
+namespace MauticPlugin\MauticWechatBundle\Event;
 
 use Mautic\CoreBundle\Event\CommonEvent;
-use MauticPlugin\WechatBundle\Entity\Account;
-use MauticPlugin\WechatBundle\Entity\Stat;
+use MauticPlugin\MauticWechatBundle\Entity\Account;
+use MauticPlugin\MauticWechatBundle\Entity\Stat;
 
 /**
  * Class WechatEvent
  *
- * @package MauticPlugin\WechatBundle\Event
+ * @package MauticPlugin\MauticWechatBundle\Event
  */
 class WechatEvent extends CommonEvent
 {

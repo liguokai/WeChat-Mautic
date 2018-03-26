@@ -1,12 +1,12 @@
 <?php
 
-namespace MauticPlugin\WechatBundle\EventListener;
+namespace MauticPlugin\MauticWechatBundle\EventListener;
 
 use Mautic\CoreBundle\EventListener\CommonSubscriber;
 use Mautic\CampaignBundle\Event\CampaignBuilderEvent;
 use Mautic\CampaignBundle\CampaignEvents;
-use MauticPlugin\WechatBundle\WechatEvents;
-use MauticPlugin\WechatBundle\Event\WechatEvent;
+use MauticPlugin\MauticWechatBundle\WechatEvents;
+use MauticPlugin\MauticWechatBundle\Event\WechatEvent;
 
 /*
  * Class CampaignSubscriber
@@ -32,7 +32,7 @@ class CampaignSubscriber extends CommonSubscriber
             $action = array(
                 'label' =>  'mautic.wechat.campaign.event.send_message',
                 'description' => 'mautic.wechat.campaign.event.send_message_descr',
-                'callback'         => array('\MauticPlugin\WechatBundle\Helper\WechatHelper', 'send'),
+                'callback'         => array('\MauticPlugin\MauticWechatBundle\Helper\WechatHelper', 'send'),
                 'formType'        => 'messagesend_list',
                 'formTypeOptions'  => array('update_select' => 'campaignevent_properties_message'),
                 'formTheme'        => 'MauticSmsBundle:FormTheme\WechatSendList',
@@ -55,7 +55,7 @@ class CampaignSubscriber extends CommonSubscriber
             $trigger = array(
                 'label'       => 'mautic.wechat.campaign.event.article_opened',
                 'description' => 'mautic.wechat.campaign.event.article_opened_descr',
-                'callback'         => array('\MauticPlugin\WechatBundle\Helper\WechatHelper', 'validateOpenedArticle'),
+                'callback'         => array('\MauticPlugin\MauticWechatBundle\Helper\WechatHelper', 'validateOpenedArticle'),
             );
             $event->addLeadDecision('wechat.article_opened', $trigger);
         }
