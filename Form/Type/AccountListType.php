@@ -1,6 +1,6 @@
 <?php
 
-namespace Mautic\WechatBundle\Form\Type;
+namespace MauticPlugin\WechatBundle\Form\Type;
 
 use Mautic\CoreBundle\Factory\MauticFactory;
 use Symfony\Component\Form\AbstractType;
@@ -10,7 +10,7 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 /**
  * Class AccountListType
  *
- * @package Mautic\WechatBundle\Form\Type
+ * @package MauticPlugin\WechatBundle\Form\Type
  */
 class AccountListType extends AbstractType
 {

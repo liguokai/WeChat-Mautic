@@ -1,13 +1,13 @@
 <?php
 
-namespace Mautic\WechatBundle;
+namespace MauticPlugin\WechatBundle;
 
 use Mautic\PluginBundle\Bundle\PluginBundleBase;
 
 /**
  * Class MauticWechatBundle
  *
- * @package Mautic\WechatBundle
+ * @package MauticPlugin\WechatBundle
  */
 class MauticWechatBundle extends PluginBundleBase
 {

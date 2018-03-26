@@ -1,16 +1,16 @@
 <?php
 
-namespace Mautic\WechatBundle\Helper;
+namespace MauticPlugin\WechatBundle\Helper;
 
 use libphonenumber\PhoneNumberFormat;
 use libphonenumber\PhoneNumberUtil;
 use Mautic\LeadBundle\Entity\DoNotContact;
 use Mautic\LeadBundle\Entity\Lead;
 use Mautic\CoreBundle\Factory\MauticFactory;
-use Mautic\WechatBundle\Event\WechatSendEvent;
-use Mautic\WechatBundle\WechatEvents;
-use Mautic\WechatBundle\Entity\Account;
-use Mautic\WechatBundle\Entity\Message;
+use MauticPlugin\WechatBundle\Event\WechatSendEvent;
+use MauticPlugin\WechatBundle\WechatEvents;
+use MauticPlugin\WechatBundle\Entity\Account;
+use MauticPlugin\WechatBundle\Entity\Message;
 
 class WechatHelper
 {
@@ -52,10 +52,10 @@ class WechatHelper
             return array('failed' => 1);
         }
 
-        /** @var \Mautic\WechatBundle\Api\AbstractWechatApi $wechat */
+        /** @var \MauticPlugin\WechatBundle\Api\AbstractWechatApi $wechat */
         $wechatApi = $factory->getKernel()->getContainer()->get('mautic.wechat.api');
 
-        /** @var \Mautic\WechatBundle\Model\WechatModel $wechatModel */
+        /** @var \MauticPlugin\WechatBundle\Model\WechatModel $wechatModel */
         $wechatModel = $factory->getModel('wechat');
 
         $messageId = (int) $event['properties']['message'];

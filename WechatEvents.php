@@ -7,13 +7,13 @@
  * @license     GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
 
-namespace Mautic\WechatBundle;
+namespace MauticPlugin\WechatBundle;
 
 /**
  * Class WechatEvents
  * Events available for WechatBundle
  *
- * @package Mautic\WechatBundle
+ * @package MauticPlugin\WechatBundle
  */
 final class WechatEvents
 {
@@ -23,7 +23,7 @@ final class WechatEvents
      * The mautic.wechat_pre_save event is thrown right before a wechat is persisted.
      *
      * The event listener receives a
-     * Mautic\WechatBundle\Event\WechatEvent instance.
+     * MauticPlugin\WechatBundle\Event\WechatEvent instance.
      *
      * @var string
      */
@@ -33,7 +33,7 @@ final class WechatEvents
      * The mautic.wechat_post_save event is thrown right after a wechat is persisted.
      *
      * The event listener receives a
-     * Mautic\WechatBundle\Event\WechatEvent instance.
+     * MauticPlugin\WechatBundle\Event\WechatEvent instance.
      *
      * @var string
      */
@@ -43,7 +43,7 @@ final class WechatEvents
      * The mautic.wechat_pre_delete event is thrown prior to when a wechat is deleted.
      *
      * The event listener receives a
-     * Mautic\WechatBundle\Event\WechatEvent instance.
+     * MauticPlugin\WechatBundle\Event\WechatEvent instance.
      *
      * @var string
      */
@@ -53,7 +53,7 @@ final class WechatEvents
      * The mautic.wechat_post_delete event is thrown after a wechat is deleted.
      *
      * The event listener receives a
-     * Mautic\WechatBundle\Event\WechatEvent instance.
+     * MauticPlugin\WechatBundle\Event\WechatEvent instance.
      *
      * @var string
      */

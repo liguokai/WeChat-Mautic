@@ -1,5 +1,5 @@
 <?php
-namespace Mautic\WechatBundle\EventListener;
+namespace MauticPlugin\WechatBundle\EventListener;
 
 use Mautic\CoreBundle\EventListener\CommonSubscriber;
 use Mautic\ConfigBundle\ConfigEvents;
@@ -8,7 +8,7 @@ use Mautic\ConfigBundle\Event\ConfigBuilderEvent;
 /**
  * Class ConfigSubscriber
  *
- * @package Mautic\WechatBundle\EventListener
+ * @package MauticPlugin\WechatBundle\EventListener
  */
 class ConfigSubscriber extends CommonSubscriber
 {

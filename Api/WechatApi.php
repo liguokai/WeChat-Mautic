@@ -6,14 +6,14 @@
  * @link        http://mautic.org
  * @license     GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
-namespace Mautic\WechatBundle\Api;
+namespace MauticPlugin\WechatBundle\Api;
 
 use Joomla\Http\Response;
 use Mautic\CoreBundle\Factory\MauticFactory;
 use Mautic\LeadBundle\Entity\Lead;
-use Mautic\WechatBundle\Entity\Account;
-use Mautic\WechatBundle\Entity\Article as MessageArticle;
-use Mautic\WechatBundle\Entity\News as MessageNews;
+use MauticPlugin\WechatBundle\Entity\Account;
+use MauticPlugin\WechatBundle\Entity\Article as MessageArticle;
+use MauticPlugin\WechatBundle\Entity\News as MessageNews;
 use EasyWeChat\Foundation\Application;
 use EasyWeChat\Message\News;
 use EasyWeChat\Message\Article;
@@ -57,7 +57,7 @@ class WechatApi extends AbstractWechatApi
 
 
     /**
-     * @param Mautic\WechatBundle\Entity Account
+     * @param MauticPlugin\WechatBundle\Entity Account
      *
      * @return EasyWeChat\Foundation\Application
      */
@@ -140,7 +140,7 @@ class WechatApi extends AbstractWechatApi
     }
 
     /**
-     * @param Mautic\WechatBundle\Entity Account
+     * @param MauticPlugin\WechatBundle\Entity Account
      * @param string $number
      * @param string $content
      *

@@ -1,5 +1,5 @@
 <?php
-namespace Mautic\WechatBundle\Entity;
+namespace MauticPlugin\WechatBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Mautic\CoreBundle\Doctrine\Mapping\ClassMetadataBuilder;
@@ -8,7 +8,7 @@ use Mautic\CoreBundle\Helper\EmojiHelper;
 /**
  * Class Account
  *
- * @package Mautic\WechatBundle\Entity
+ * @package MauticPlugin\WechatBundle\Entity
  */
 class Account
 {
@@ -60,7 +60,7 @@ class Account
         $builder = new ClassMetadataBuilder($metadata);
 
         $builder->setTable('wechat_accounts')
-            ->setCustomRepositoryClass('Mautic\WechatBundle\Entity\AccountRepository');
+            ->setCustomRepositoryClass('MauticPlugin\WechatBundle\Entity\AccountRepository');
 
         $builder->addIdColumns();
 

@@ -1,14 +1,14 @@
 <?php
-namespace Mautic\WechatBundle\Controller;
+namespace MauticPlugin\WechatBundle\Controller;
 
 use Mautic\CoreBundle\Controller\FormController;
 use Mautic\CoreBundle\Helper\BuilderTokenHelper;
 use Mautic\CoreBundle\Helper\EmojiHelper;
 use Mautic\CoreBundle\Helper\InputHelper;
 use Mautic\CoreBundle\Templating\TemplateNameParser;
-use Mautic\WechatBundle\WechatEvents;
-use Mautic\WechatBundle\Entity;
-use Mautic\WechatBundle\Model;
+use MauticPlugin\WechatBundle\WechatEvents;
+use MauticPlugin\WechatBundle\Entity;
+use MauticPlugin\WechatBundle\Model;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -27,7 +27,7 @@ class MessageController extends FormController
         $model = $this->factory->getModel('wechat');
 
         if (!$entity instanceof Message) {
-            /** @var \Mautic\WechatBundle\Entity\Wechat $entity */
+            /** @var \MauticPlugin\WechatBundle\Entity\Wechat $entity */
             $entity  = $model->getEntity('Message');
         }
 

@@ -7,20 +7,20 @@
  * @license     GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
 
-namespace Mautic\WechatBundle\Model;
+namespace MauticPlugin\WechatBundle\Model;
 
 use Mautic\CoreBundle\Helper\DateTimeHelper;
 use Mautic\CoreBundle\Helper\GraphHelper;
 use Mautic\CoreBundle\Model\FormModel;
 
-use Mautic\WechatBundle\Entity\Account;
-use Mautic\WechatBundle\Entity\Article;
-use Mautic\WechatBundle\Entity\Message;
-use Mautic\WechatBundle\Entity\News;
-use Mautic\WechatBundle\Entity\Openid;
-use Mautic\WechatBundle\Entity\Stat;
-use Mautic\WechatBundle\Event\WechatEvent;
-use Mautic\WechatBundle\WechatEvents;
+use MauticPlugin\WechatBundle\Entity\Account;
+use MauticPlugin\WechatBundle\Entity\Article;
+use MauticPlugin\WechatBundle\Entity\Message;
+use MauticPlugin\WechatBundle\Entity\News;
+use MauticPlugin\WechatBundle\Entity\Openid;
+use MauticPlugin\WechatBundle\Entity\Stat;
+use MauticPlugin\WechatBundle\Event\WechatEvent;
+use MauticPlugin\WechatBundle\WechatEvents;
 use Mautic\LeadBundle\Entity\DoNotContact;
 use Mautic\LeadBundle\Entity\Lead;
 use Symfony\Component\EventDispatcher\Event;
@@ -34,7 +34,7 @@ use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
 class WechatModel extends FormModel
 {
     /**
-     * @return \Mautic\WechatBundle\Entity\Repository
+     * @return \MauticPlugin\WechatBundle\Entity\Repository
      */
     public function getRepository($type = null)
     {

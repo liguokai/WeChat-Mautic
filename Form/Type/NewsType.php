@@ -1,6 +1,6 @@
 <?php
 
-namespace Mautic\WechatBundle\Form\Type;
+namespace MauticPlugin\WechatBundle\Form\Type;
 
 use Mautic\CoreBundle\Factory\MauticFactory;
 use Mautic\CoreBundle\Form\DataTransformer\IdToEntityModelTransformer;
@@ -13,7 +13,7 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 /**
  * Class NewsType
  *
- * @package Mautic\WechatBundle\Form\Type
+ * @package MauticPlugin\WechatBundle\Form\Type
  */
 class NewsType extends AbstractType
 {
@@ -113,7 +113,7 @@ class NewsType extends AbstractType
     {
         $resolver->setDefaults(
             array(
-                'data_class' => 'Mautic\WechatBundle\Entity\News'
+                'data_class' => 'MauticPlugin\WechatBundle\Entity\News'
             )
         );
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Mautic\WechatBundle\Form\Type;
+namespace MauticPlugin\WechatBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -11,7 +11,7 @@ use Symfony\Component\Validator\Constraints\NotBlank;
 /**
  * Class ConfigType
  *
- * @package Mautic\WechatBundle\Form\Type
+ * @package MauticPlugin\WechatBundle\Form\Type
  */
 class ConfigType extends AbstractType
 {

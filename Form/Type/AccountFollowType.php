@@ -1,6 +1,6 @@
 <?php
 
-namespace Mautic\WechatBundle\Form\Type;
+namespace MauticPlugin\WechatBundle\Form\Type;
 
 use Mautic\CoreBundle\Factory\MauticFactory;
 use Mautic\CoreBundle\Form\DataTransformer\IdToEntityModelTransformer;
@@ -14,7 +14,7 @@ use Symfony\Component\Validator\Constraints\NotBlank;
 /**
  * Class AccountFollowType
  *
- * @package Mautic\WechatBundle\Form\Type
+ * @package MauticPlugin\WechatBundle\Form\Type
  */
 class AccountFollowType extends AbstractType
 {

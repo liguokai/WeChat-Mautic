@@ -7,7 +7,7 @@
  * @license     GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
 
-namespace Mautic\WechatBundle\Event;
+namespace MauticPlugin\WechatBundle\Event;
 
 use Mautic\CoreBundle\Event\CommonEvent;
 use Mautic\LeadBundle\Entity\Lead;
@@ -15,7 +15,7 @@ use Mautic\LeadBundle\Entity\Lead;
 /**
  * Class WechatSendEvent
  *
- * @package Mautic\WechatBundle\Event
+ * @package MauticPlugin\WechatBundle\Event
  */
 class WechatSendEvent extends CommonEvent
 {

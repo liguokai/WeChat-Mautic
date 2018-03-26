@@ -1,6 +1,6 @@
 <?php
 
-namespace Mautic\WechatBundle\Entity;
+namespace MauticPlugin\WechatBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Mautic\CoreBundle\Doctrine\Mapping\ClassMetadataBuilder;
@@ -13,7 +13,7 @@ use Mautic\LeadBundle\Entity\LeadList;
 /**
  * Class Openid
  *
- * @package Mautic\WechatBundle\Entity
+ * @package MauticPlugin\WechatBundle\Entity
  */
 class Openid
 {
@@ -50,7 +50,7 @@ class Openid
         $builder = new ClassMetadataBuilder($metadata);
 
         $builder->setTable('wechat_openids')
-            ->setCustomRepositoryClass('Mautic\WechatBundle\Entity\OpenidRepository')
+            ->setCustomRepositoryClass('MauticPlugin\WechatBundle\Entity\OpenidRepository')
             ->addIndex(array('open_id'), 'wechat_openids_openid_search');
 
         $builder->addId();
@@ -64,7 +64,7 @@ class Openid
             ->addJoinColumn('lead_id', 'id', false, false, 'CASCADE')
             ->build();
 
-        $builder->createManyToOne('account', 'Mautic\WechatBundle\Entity\Account')
+        $builder->createManyToOne('account', 'MauticPlugin\WechatBundle\Entity\Account')
             ->inversedBy('wechat_openids')
             ->addJoinColumn('account_id', 'id', false, false, 'CASCADE')
             ->build();

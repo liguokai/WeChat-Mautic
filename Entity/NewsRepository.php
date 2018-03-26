@@ -1,5 +1,5 @@
 <?php
-namespace Mautic\WechatBundle\Entity;
+namespace MauticPlugin\WechatBundle\Entity;
 
 use Doctrine\ORM\NoResultException;
 use Mautic\CoreBundle\Entity\CommonRepository;
@@ -7,7 +7,7 @@ use Mautic\CoreBundle\Entity\CommonRepository;
 /**
  * Class NewsRepository
  *
- * @package Mautic\WechatBundle\Entity
+ * @package MauticPlugin\WechatBundle\Entity
  */
 class NewsRepository extends CommonRepository
 {

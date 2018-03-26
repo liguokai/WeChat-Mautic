@@ -1,5 +1,5 @@
 <?php
-namespace Mautic\WechatBundle\Entity;
+namespace MauticPlugin\WechatBundle\Entity;
 
 use Doctrine\ORM\NoResultException;
 use Mautic\CoreBundle\Entity\CommonRepository;
