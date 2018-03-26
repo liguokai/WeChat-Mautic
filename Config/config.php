@@ -1,6 +1,10 @@
 <?php
 
 return array(
+    'name' => 'Wechat',
+    'description' => 'Wechat Plugin',
+    'author' => 'Jason',
+    'version' => '1.0.0',
     'routes' => array(
         'main'   => array(
             'mautic_wechat_index'  => array(
